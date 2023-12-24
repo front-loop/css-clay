@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  margin: 0;
+  gap: 3rem;
+  background-color: #fbe8a6;
+}
+
+.clay {
+  border-radius: var(--clay-border-radius, 32px);
+  background: var(--clay-background, rgba(0, 0, 0, 0.005));
+  box-shadow: var(--clay-shadow-outset, 8px 8px 16px 0 rgba(0, 0, 0, 0.25)),
+    inset var(--clay-shadow-inset-primary, -8px -8px 16px 0 rgba(0, 0, 0, 0.25)),
+    inset var(--clay-shadow-inset-secondary, 8px 8px 16px 0 hsla(0, 0%, 100%, 0.2));
+}
+
+.square {
+  --clay-background: white;
+  --clay-shadow-inset-secondary: 8px 8px 8px 0 hsla(0, 0%, 100%, 0.9);
+  width: 10rem;
+  height: 10rem;
+}
+
+.circle {
+  --clay-border-radius: 100%;
+  --clay-background: white;
+  --clay-shadow-inset-secondary: 8px 8px 8px 0 hsla(0, 0%, 100%, 0.9);
+  width: 10rem;
+  height: 10rem;
+}
